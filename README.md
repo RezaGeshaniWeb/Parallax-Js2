@@ -1,9 +1,9 @@
 # Parallax-Js2
 
-![Alt text](https://github.com/user-attachments/assets/a086a5d1-1d28-4d88-9343-3e1842c183c0)
+![Alt text](https://github.com/user-attachments/assets/36a39152-9905-404f-853a-a1377b58be8c)
 
 
-![Alt text](https://github.com/user-attachments/assets/7698c1d7-384f-45f4-a0ad-a85759e7d9b1)
+![Alt text](https://github.com/user-attachments/assets/8e53df23-425e-4a92-83e9-cd642cba1cb2)
 
 
 - [Online Demo](https://rezageshaniweb.github.io/Parallax-Js2/)
