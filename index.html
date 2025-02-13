@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Js</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="https://www.icebergdoc.org/favicon.svg">
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body>
+    <main id="app" class="select-none w-full h-[20000px]">
+        <!-- line -->
+        <div class="w-[1px] h-full bg-slate-200 bg-opacity-30 fixed left-[16.6%] z-[100]"></div>
+        <div class="w-[1px] h-full bg-slate-200 bg-opacity-30 fixed left-[49.8%] z-[100]"></div>
+        <div class="w-[1px] h-full bg-slate-200 bg-opacity-30 fixed left-[83%] z-[100]"></div>
+        <!-- line -->
+        <header class="w-full flex items-center justify-between fixed z-[90] px-2">
+            <a href="#" class="flex flex-col *:text-[12px] *:text-white *:font-bold p-2">
+                <span>ICEBERG</span>
+                <span class="-mt-2">ICEBERG</span>
+            </a>
+            <a href="#" class="text-white text-[12px] font-bold p-2">THE PROJECT</a>
+            <a href="#" class="text-white text-[12px] font-bold p-2">IMPACT IN ACTION</a>
+            <a href="#" class="text-white text-[12px] font-bold p-2">JOIN THE JOURNEY</a>
+        </header>
+
+        <!-- sec 1 -->
+        <section id="sec1" class="w-full h-screen bg-black fixed top-0">
+            <video src="img/sec1.mp4" class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted
+                loop></video>
+            <div class="2xl:container mx-auto w-full h-full">
+                <h1
+                    class="text-[220px] text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold hidden lg:block">
+                    ICEBERG</h1>
+                <!-- 0 to 16.6% -->
+                <div class="cover w-0 h-full bg-black transition-all duration-1000 fixed left-0 top-0 z-[80]"></div>
+                <!-- 16.6% to 33.2% -->
+                <div class="cover w-0 h-full bg-black transition-all duration-1000 fixed left-[16.6%] top-0 z-[80]">
+                </div>
+                <!-- 33.2% to 49.8% -->
+                <div class="cover w-0 h-full bg-black transition-all duration-1000 fixed left-[33.2%] top-0 z-[80]">
+                </div>
+                <!-- 49.8% to 66.4% -->
+                <div class="cover w-0 h-full bg-black transition-all duration-1000 fixed left-[49.8%] top-0 z-[80]">
+                </div>
+                <!-- 66.4% to 83% -->
+                <div class="cover w-0 h-full bg-black transition-all duration-1000 fixed left-[66.4%] top-0 z-[80]">
+                </div>
+                <!-- 83% to 100% -->
+                <div class="cover w-0 h-full bg-black transition-all duration-1000 fixed left-[83%] top-0 z-[80]"></div>
+            </div>
+        </section>
+        <!-- sec 1 -->
+
+        <!-- sec 2 -->
+        <section id="sec2" class="w-full h-[110vh] bg-black fixed top-[100vh] left-0 transition-[top] duration-1000">
+            <marquee behavior="alternate" class="text-[220px] text-white font-bold absolute top-[20%]">
+                change begins where we're not looking. change begins where we're not looking.
+            </marquee>
+            <img src="img/blur.avif" alt="" class="absolute top-[20%] left-[10%] z-50 w-[30%]">
+        </section>
+        <!-- sec 2 -->
+
+        <!-- sec 3 -->
+        <section id="sec3"
+            class="w-full h-[110vh] fixed top-[200vh] left-0 bg-about1 bg-cover bg-no-repeat transition-all duration-1000 p-32 *:w-[350px] *:text-xl *:text-white *:font-mono *:mt-36 *:transition-all *:duration-1000">
+            <p>
+                1- Iceberg is a transmedia documentary that uncovers humanity’s hidden capacity to tackle the climate
+                crisis.
+            </p>
+            <p class="hidden">
+                2- Through film, podcasts, shared initiatives, and crowdfunding, Iceberg challenges the narrative of
+                helplessness and reveals the global solutions already emerging beneath the surface.
+            </p>
+            <p class="hidden">
+                3- It's an invitation to reimagine the future and reconnect with our ability to transform it.
+            </p>
+        </section>
+        <!-- sec 3 -->
+
+        <!-- sec 4 -->
+        <section id="sec4" class="w-full h-[110vh] fixed top-[300vh] left-0 transition-all duration-1000 bg-[#ff6a41]">
+            <p
+                class="text-white text-5xl font-mono text-center font-bold w-[80%] lg:w-1/2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-1000 capitalize">
+                Around the world, thousands of initiatives are quietly revolutionizing our predatory system, though—
+                like
+                an iceberg—they often remain hidden beneath the surface.
+            </p>
+        </section>
+        <!-- sec 4 -->
+
+        <!-- sec 5 -->
+        <section id="sec5"
+            class="w-full h-[110vh] fixed top-[400vh] left-0 transition-all duration-1000 bg-project1 bg-cover bg-no-repeat">
+            <img src="img/blur2.png" alt="" class="absolute top-0 left-0">
+            <div
+                class="w-[70%] lg:w-[450px] h-[600px] bg-white hover:bg-[#ff6a41] hover:text-white group transition-all duration-500 absolute top-[90px] right-[5%]">
+                <figure class="w-full h-[70%] overflow-hidden">
+                    <img id="sec5-img" src="img/project1-scaled.avif" alt=""
+                        class="flex w-full h-full object-cover group-hover:scale-110 transition-all duration-300">
+                </figure>
+                <h3 id="sec5-title" class="pl-2 font-bold text-xl">Positive Money</h3>
+                <p class="pl-2 text-white">Redesign the global economic system for social justice
+                    and a livable planet</p>
+                <span class="pl-2 font-bold block mt-6">Economics</span>
+                <span class="pl-2 block">London, United Kingdom</span>
+                <span class="pl-2 block">2010</span>
+            </div>
+        </section>
+        <!-- sec 5 -->
+
+        <!-- sec 6 -->
+        <section id="sec6" class="bg-[#c4c4c4] w-full fixed top-[500vh] left-0 transition-all duration-1000 pt-16">
+            <marquee behavior="alternate" class="text-[220px] text-white font-bold mb-20">
+                change begins where we're not looking. change begins where we're not looking.
+            </marquee>
+            <p class="text-white text-3xl w-[80%] lg:w-[550px] ml-20 mb-28">
+                As part of the Iceberg transmedia documentary, our podcast series delves into the stories of those
+                looking for solutions to a sustainable future with unique and surprising perspectives. Each episode
+                features conversations with visionaries, activists and innovators that challenge the status quo and make
+                you rethink the way we live.
+            </p>
+            <div
+                class="w-full h-[140vh] bg-last bg-cover relative flex flex-col justify-center items-center lg:flex-row">
+                <img src="img/blur3.avif" alt="" class="w-[500px] h-full opacity-50 absolute top-0 left-0">
+                <div class="w-[80%] lg:w-1/3 h-[55%] bg-[#ff6a41] relative z-50 p-4">
+                    <h2 class="text-white text-5xl uppercase font-bold mb-72">The<br>Podcast</h2>
+                    <a href="#" class="text-white mb-3 block font-semibold">Coming soon</a>
+                    <p class="text-white">
+                        Dive into the minds of visionaries leading groundbreaking initiatives. Hear their stories and
+                        learn how they’re creating real change across the world.
+                    </p>
+                </div>
+                <div class="w-[80%] lg:w-1/3 h-[55%] bg-[#ffffff46] mt-20 p-4">
+                    <h2 class="text-white text-5xl uppercase font-bold mb-72">The<br>Crowdfunding</h2>
+                    <a href="#" class="text-white mb-3 block font-semibold">View more</a>
+                    <p class="text-white">
+                        Help us give a voice to the solutions transforming the world: support our podcast and be part of
+                        the change.
+                    </p>
+                </div>
+            </div>
+            <div class="w-full h-[200vh] bg-black py-20 flex flex-col items-center">
+                <p class="text-white text-5xl font-mono text-center font-bold w-[80%] lg:w-[45%] my-20 tracking-widest">
+                    We’d love to hear from you. Whether you’re interested in learning more about Iceberg, or sharing
+                    your insights, reach out! Together.
+                </p>
+                <a href="#"
+                    class="text-4xl font-bold flex mb-28 text-white font-mono underline underline-offset-2 hover:no-underline">Contact
+                    Me</a>
+                <!-- info -->
+                <div
+                    class="w-[80%] bg-[#09070a] bg-dark border border-slate-400 border-opacity-50 px-10 rounded-xl flex justify-between items-center">
+                    <div class="pt-10 pb-4 md:px-7 text-gray-300">
+                        <p class="mb-8 leading-8">
+                            © 2025 • This is a demo from <strong
+                                class="tracking-wider gradient-text">Parallax-Js</strong> • Coded
+                            by
+                            <strong class="tracking-wider gradient-text">RezaGeshani</strong>
+                        </p>
+                        <div class="mb-6">
+                            <i class="bi bi-telephone-fill text-xl"></i>
+                            <a class="text-lg hover:underline ml-3 hover:text-[#1f9caa] transition-all duration-200"
+                                href="tel:09934774358">09934774358</a>
+                        </div>
+                        <div class="mb-6">
+                            <i class="bi bi-linkedin text-xl"></i>
+                            <a class="text-lg hover:underline ml-3 hover:text-[#1f9caa] transition-all duration-200"
+                                href="https://www.linkedin.com/in/reza-geshani-web">reza-geshani-web</a>
+                        </div>
+                        <div class="mb-6">
+                            <i class="bi bi-instagram text-xl"></i>
+                            <a class="text-lg hover:underline ml-3 hover:text-[#1f9caa] transition-all duration-200"
+                                href="https://www.instagram.com/rezageshani_web">@rezageshani_web</a>
+                        </div>
+                        <div class="mb-6">
+                            <i class="bi bi-github text-xl"></i>
+                            <a class="text-lg hover:underline ml-3 hover:text-[#1f9caa] transition-all duration-200"
+                                href="https://github.com/RezaGeshaniWeb/">RezaGeshaniWeb</a>
+                        </div>
+                    </div>
+                    <div class="hidden w-[170px] h-[170px] rounded-full border-[1px] border-orange-300 outline-[1px] outline-orange-300 
+        outline-offset-8 md:flex items-center justify-center select-none z-50 group relative mr-7">
+                        <div class="circle w-[165px] h-[165px] rounded-full">
+                            <img src="img/me5.webp" alt="" class="w-full h-full rounded-full object-cover">
+                        </div>
+                        <strong
+                            class="absolute top-[45%] right-[-92px] rotate-[90deg] text-[15px] italic text-orange-300">Frontend
+                            Developer</strong>
+                        <a href="https://www.linkedin.com/in/reza-geshani-web"><i
+                                class="bi bi-linkedin group-hover:visible text-[26px] text-white absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 hover:text-[#1f9caa] top-[-10px] left-[-58px]"></i></a>
+                        <a href="https://www.instagram.com/rezageshani_web"><i
+                                class="bi bi-instagram group-hover:visible text-[26px] absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 hover:text-[#1f9caa] text-white top-[40px] left-[-80px]"></i></a>
+                        <a href="https://github.com/RezaGeshaniWeb/"><i
+                                class="bi bi-github group-hover:visible text-[26px] absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 hover:text-[#1f9caa] text-white top-[90px] left-[-80px]"></i></a>
+                        <a href="mailto:rezageshaniweb@gmail.com"><i
+                                class="bi bi-envelope-at group-hover:visible text-[26px] absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 hover:text-[#1f9caa] text-white top-[130px] left-[-58px]"></i></a>
+                    </div>
+                </div>
+                <!-- info -->
+                <h2 class="text-[220px] text-white text-center font-bold hidden lg:block">ICEBERG</h2>
+            </div>
+        </section>
+        <!-- sec 6 -->
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
